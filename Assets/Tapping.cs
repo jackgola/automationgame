@@ -1,11 +1,16 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
+
 using System.Collections;
 
 public class Tapping : MonoBehaviour
 {
     public GameObject orb;
 
-    public bool isTapped = false;
+    public bool isTapped;
+    public int score;
+    public Text orbScore;
+
 
     // score coming soon!
 
@@ -13,6 +18,8 @@ public class Tapping : MonoBehaviour
     void Start()
     {
         StartCoroutine("Spawn");
+        isTapped = false;
+        
     }
 
     // Controls color change when you press space
@@ -20,15 +27,14 @@ public class Tapping : MonoBehaviour
     {
         if (isTapped == true)
         {
-            orb.transform.position = new Vector3(5, 6, 1);
+            orb.transform.position = new Vector3(0, 6, 0);
             StartCoroutine("Delay");
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             SpriteRenderer renderer = GetComponent<SpriteRenderer>();
-            renderer.color = Color.cyan;
-
+            renderer.color = Color.gray;
         }
         if (Input.GetKeyUp(KeyCode.Space))
         {
@@ -36,15 +42,7 @@ public class Tapping : MonoBehaviour
             renderer.color = Color.white;
         }
     }
-    // Checks if kripto was "tagged" on enter
-    void OnTriggerEnter2D(Collider2D other)
-    {
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            isTapped = true;
-        }
-    }
+   
     // Checks if kripto was "tagged" on stay
     void OnTriggerStay2D(Collider2D other)
     {
@@ -52,14 +50,14 @@ public class Tapping : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             isTapped = true;
+            score += 1;
+            orbScore = GameObject.Find("Text").GetComponent<Text>();
+            orbScore.text = score.ToString();
+
+            Debug.Log("Score: " + score);
         }
     }
-    // Checks if kripto was "tagged" on exit
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-            isTapped = true;
-    }
+    
     IEnumerator Spawn()
     {
         yield return new WaitForSeconds(2f);

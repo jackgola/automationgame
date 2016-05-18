@@ -1,0 +1,17 @@
+E:\Unity\Tap game\Automation game\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+E:\Unity\Tap game\Automation game\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+E:\Unity\Tap game\Automation game\Temp\UnityVS_bin\Debug\UnityEditor.dll
+E:\Unity\Tap game\Automation game\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Common.dll
+E:\Unity\Tap game\Automation game\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+E:\Unity\Tap game\Automation game\Temp\UnityVS_bin\Debug\UnityEngine.dll
+E:\Unity\Tap game\Automation game\Temp\UnityVS_bin\Debug\UnityEngine.Networking.dll
+E:\Unity\Tap game\Automation game\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+E:\Unity\Tap game\Automation game\Temp\UnityVS_bin\Debug\UnityEngine.xml
+E:\Unity\Tap game\Automation game\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+E:\Unity\Tap game\Automation game\Temp\UnityVS_bin\Debug\UnityEngine.Networking.xml
+E:\Unity\Tap game\Automation game\Temp\UnityVS_bin\Debug\UnityEditor.xml
+E:\Unity\Tap game\Automation game\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+E:\Unity\Tap game\Automation game\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Common.xml
+E:\Unity\Tap game\Automation game\Temp\UnityVS_obj\Debug\Automation game.CSharp.csprojResolveAssemblyReference.cache
+E:\Unity\Tap game\Automation game\Temp\UnityVS_obj\Debug\Assembly-CSharp.dll
+E:\Unity\Tap game\Automation game\Temp\UnityVS_obj\Debug\Assembly-CSharp.pdb
